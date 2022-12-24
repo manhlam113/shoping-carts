@@ -16,7 +16,12 @@ const globalState = {
   stateProduct: rdcProduct,
   stateUser: rdcUser,
 };
-
 const allRdc = combineReducers(globalState);
-export default createStore(allRdc, applyMiddleware(middleware));
+
+const persistReducer2 = persistReducer(persistConfig, allRdc);
+const store = createStore(persistReducer2, applyMiddleware(middleware));
 middleware.run(mysaga);
+
+const persistor = persistStore(store);
+export default store;
+export { persistor };

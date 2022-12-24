@@ -95,14 +95,14 @@ const Header = () => {
                 Products
               </NavLink>
             </li>
-            <li className="menu-item mx-4 my-6 md:my-0">
+            {/* <li className="menu-item mx-4 my-6 md:my-0">
               <NavLink
                 to="/reviews"
                 className="menu-link text-primary text-lg hover:text-opacity-10 font-semibold"
               >
                 Reviews
               </NavLink>
-            </li>
+            </li> */}
 
             <div className="header-button md:flex md:items-center md:ml-0 ml-3">
               <button
