@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProductList = ({ productData }) => {
   const navigator = useNavigate();
   return (
-    <div className="lg:w-3/6 flex gap-y-2 flex-col">
+    <div className="overflow-y-auto h-[600px] lg:w-3/6 flex gap-y-2 flex-col">
       {productData &&
         productData.length > 0 &&
         productData.map((item, index) => (

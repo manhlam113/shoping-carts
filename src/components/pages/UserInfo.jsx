@@ -59,7 +59,7 @@ const UserInfo = () => {
   }
   return (
     <div className="mx-auto max-w-[1200px] mt-10 flex gap-x-4">
-      <div className="w-[200px] h-[500px] rounded-md p-2 bg-white">
+      <div className="w-[250px] h-[500px] rounded-md p-2 bg-white">
         <div className="flex gap-x-1 items-center">
           <span>
             <svg
@@ -104,7 +104,7 @@ const UserInfo = () => {
               Profile
             </button>
           </li>
-          <li>History</li>
+          <li className="font-semibold">History</li>
           <li>
             {" "}
             <div className="logout">

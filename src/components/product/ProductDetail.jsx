@@ -124,8 +124,8 @@ const ProductDetail = ({ productData }) => {
               </svg>
             </span>
             <span className="md:hidden lg:block">Add To Cart</span>
-            <ToastContainer></ToastContainer>
           </button>
+          <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>
