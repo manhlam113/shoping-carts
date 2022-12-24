@@ -143,8 +143,10 @@ const UserInfo = () => {
                     .slice(1, historyTempValues[index].length)
                     .filter(
                       (item1) =>
-                        item1.productName?.toLowerCase().includes(valueInput) ||
-                        item1.productId?.toLowerCase().includes(valueInput)
+                        item1?.productName
+                          ?.toLowerCase()
+                          .includes(valueInput) ||
+                        item1?.productId?.toLowerCase().includes(valueInput)
                     )
                     .map((product) => (
                       <div
